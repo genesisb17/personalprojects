@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript Intro</title>
+</head>
+<body>
+
+User: <input type="text" id="user" placeholder="Name">
+<button id="pop">Click Me</button>
+<table id="userTable">
+<tr><th>ID</th><th>Name</th></tr>
+</table>
+
+
+</body>
+
+<script>
+
+var global = 0;
+var callback = function(e){// e is used to pass the event object itself. callback function
+//window.alert("Hello World!"); // event listener
+console.log("Hello World");
+}
+//document.addEventListener("click", callback, true)
+document.getElementById("pop").addEventListener("click", callback, false); // adding event listener to specific element
+</script>
+</html>

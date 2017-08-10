@@ -16,10 +16,6 @@
 		</tr>
 	</table>
 
-<br>
-AJAX
-<a href = "manage.html">Manage</a>
-<a href = "create.html">Create</a>
 
 </body>
 
@@ -33,7 +29,7 @@ AJAX
 			var tr = document.createElement("TR");
 			var id = document.createElement("TD");
 			var name = document.createElement("TD");
-			id.innerHTML = global++;
+			id = innerHTML = global++;
 			name.innerHTML = username;
 			tr.appendChild(id);
 			tr.appendChild(name);

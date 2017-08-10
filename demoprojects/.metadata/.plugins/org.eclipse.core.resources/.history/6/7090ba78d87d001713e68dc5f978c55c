@@ -16,10 +16,6 @@
 		</tr>
 	</table>
 
-<br>
-AJAX
-<a href = "manage.html">Manage</a>
-<a href = "create.html">Create</a>
 
 </body>
 
@@ -28,12 +24,12 @@ AJAX
 	var callback = function(e) {// e is used to pass the event object itself. callback function
 	//window.alert("Hello World!"); // event listener
 		console.log("Hello World");
-		var username = document.getElementById("user").value; // string
+		var username = document.getElementById("user").value // string
 		if (username) {
 			var tr = document.createElement("TR");
 			var id = document.createElement("TD");
 			var name = document.createElement("TD");
-			id.innerHTML = global++;
+			id = innerHTML = global++;
 			name.innerHTML = username;
 			tr.appendChild(id);
 			tr.appendChild(name);
