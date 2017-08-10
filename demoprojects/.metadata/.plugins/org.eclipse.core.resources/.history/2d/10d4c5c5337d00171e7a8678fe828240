@@ -1,0 +1,21 @@
+package com.ers.service;
+
+import com.ers.pojos.User;
+
+public class UserService {
+	
+	public void createAdmin(String fn, String ln, String email){
+		User u = new User();
+		u.setFirstname(fn);
+		u.setLastname(ln);
+		u.setEmail(email);
+		u.setAdmin(true);
+	}
+	
+	public void createEmployee(){}
+	
+	public void getAllUsers(){}
+	
+	
+
+}

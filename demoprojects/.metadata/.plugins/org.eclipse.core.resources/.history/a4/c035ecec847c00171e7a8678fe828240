@@ -1,0 +1,39 @@
+package com.ers.pojos;
+
+import java.io.File;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+@Table(name ="REIMBURSEMENT")
+public class Reimbursement {
+
+
+	@Column
+	private int id;
+	
+	@Column
+	private double amount;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column
+	private Date submitted;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column
+	private Date resolved;
+	
+	private User author;
+	
+	private User resolver;
+	
+	//private File receipt;
+	
+	
+	
+}

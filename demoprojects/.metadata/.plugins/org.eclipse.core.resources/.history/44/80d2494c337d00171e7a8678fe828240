@@ -1,0 +1,13 @@
+package com.ers.service;
+
+public class UserService {
+	
+	public void createAdmin(){}
+	
+	public void createEmployee(){}
+	
+	public void getAllUsers(){}
+	
+	
+
+}

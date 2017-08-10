@@ -1,0 +1,15 @@
+package com.ex.test;
+
+import com.ers.pojos.User;
+import com.ers.service.UserService;
+
+public class MainTest {
+	
+	UserService serv = new UserService();
+	User u = new User();
+	
+	
+	
+
+
+}

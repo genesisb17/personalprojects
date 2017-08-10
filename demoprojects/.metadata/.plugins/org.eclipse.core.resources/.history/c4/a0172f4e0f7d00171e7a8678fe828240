@@ -1,0 +1,24 @@
+package com.ers.dao;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.ers.pojos.User;
+import com.ers.util.ConnectionUtil;
+
+public class UserDAO {
+	
+	public void createUser(User u){
+		
+		Session session = ConnectionUtil.getSession();
+		try{
+			Transaction tx = session.beginTransaction();
+			session.save(u);
+			tx.commit();
+		}
+		finally{
+			session.close();
+		}
+	}
+
+}

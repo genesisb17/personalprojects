@@ -1,0 +1,36 @@
+package com.ers.pojos;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="USERS")
+public class User {
+	
+	
+	@Id
+	@Column(name="USER_ID")
+	@SequenceGenerator(name="USERID_SEQ", sequenceName="USERID_SEQ")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="USERID_SEQ")
+	private int id;
+	
+	
+	@Column
+	private String firstname;
+	
+	@Column
+	private String lastname;
+	
+	@Column
+	private boolean isAdmin;
+	
+	@Column
+	private String email;
+	
+
+}

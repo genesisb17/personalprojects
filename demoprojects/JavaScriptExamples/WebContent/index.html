@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript Intro</title>
+</head>
+<body>
+
+<button>Click Me</button>
+
+
+</body>
+
+<script>
+var callback = function(e){// e is used to pass the event object itself. callback function
+window.alert("Hello World!"); // event listener
+}
+document.addEventListener("click", callback, true)
+ 
+</script>
+</html>
